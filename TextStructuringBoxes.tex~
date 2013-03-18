@@ -96,3 +96,10 @@
 		\label{#4}%
 	\end{figure}%
 }
+
+% code shortcuts
+\newcommand{\code}[1]{%
+	\verbatim%
+		{#1}%
+	\endverbatim%
+}
