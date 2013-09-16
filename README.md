@@ -8,17 +8,19 @@ git usage help
 ---------------
 http://chrisjean.com/2009/04/20/git-submodules-adding-using-removing-and-updating/
 
-Add Sobmodule
--------------
-git submodule add git@github.com:moonline/toolsAndCommands.git
+### Add Sobmodule:
+- git submodule add {repoUrl}
+- Example: git submodule add git@github.com:moonline/toolsAndCommands.git
+  
 
-update submodule to bound version
----------------------------------
+### update submodule to bound version:
 git submodule update
 
-update submodules to newest version
------------------------------------
+### update submodules to newest version:
 git submodule foreach git pull
 
-remove submodule
-----------------
+### remove submodule:
+- Remove the submodule’s entry in the .gitmodules file.
+- Remove the submodule’s entry in the .git/config.
+- Run “git rm –cached {plugin path}“. 
+
